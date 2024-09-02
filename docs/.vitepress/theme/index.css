@@ -1,0 +1,11 @@
+.medium-zoom-overlay {
+  z-index: 999;
+}
+
+.medium-zoom-image {
+  z-index: 9999;
+}
+
+/* .VPNavBarTitle span { 
+  display: none; กรณีต้องการซ่อนชื่อเว็บไซต์
+} */
