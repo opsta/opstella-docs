@@ -6,6 +6,7 @@ export default defineConfig({
   description: "A Opstella docs",
   // base: "/opstella-docs/",
   ignoreDeadLinks: true,
+  head: [["link", { rel: "icon", href: "/images/opstella-logo.ico" }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     // logo: { src: "/images/opstella-logo.svg", width: 24, height: 24 },
