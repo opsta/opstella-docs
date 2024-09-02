@@ -4,7 +4,7 @@ import { defineConfig } from "vitepress"
 export default defineConfig({
   title: "Opstella Docs",
   description: "A Opstella docs",
-  base: "/opstella-document/",
+  // base: "/opstella-docs/",
   ignoreDeadLinks: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
