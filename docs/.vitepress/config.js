@@ -17,7 +17,6 @@ export default defineConfig({
     en: {
       label: "English",
       ...en,
-      link: "/en/",
     },
   },
   // themeConfig: {

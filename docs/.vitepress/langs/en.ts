@@ -28,321 +28,321 @@ function nav(): DefaultTheme.NavItem[] {
     {
       text: "Intro",
       link: `/${LANG_PREFIX}` + "/intro/getting-started",
-      activeMatch: "^/intro/",
+      activeMatch: `^/${LANG_PREFIX}/intro/`,
     },
     {
       text: "Role and Permissions",
       link: `/${LANG_PREFIX}` + "/role-and-permissions",
-      activeMatch: "^/role-and-permissions/",
+      activeMatch: `^/${LANG_PREFIX}/role-and-permissions/`,
     },
     {
       text: "Deploy Application",
       link: `/${LANG_PREFIX}` + "/deploy-application/deploy-on-opstella",
-      activeMatch: "^/deploy-application/",
+      activeMatch: `^/${LANG_PREFIX}/deploy-application/`,
     },
     {
       text: "Usecase",
       link: `/${LANG_PREFIX}` + "/usecase/argocd-ui",
-      activeMatch: "^/usecase/",
+      activeMatch: `^/${LANG_PREFIX}/usecase/`,
     },
     {
       text: "Troubleshoot",
       link: `/${LANG_PREFIX}` + "/troubleshoot/check-application-job",
-      activeMatch: "^/troubleshoot/",
+      activeMatch: `^/${LANG_PREFIX} /troubleshoot/`,
     },
   ]
 }
 
 function sidebar(): DefaultTheme.Sidebar {
   return {
-    "/intro/": {
-      base: "/intro",
+    "/en/intro/": {
+      base: `/${LANG_PREFIX}/intro`,
       items: [
         {
           text: "Introduction",
           items: [
             {
               text: "Getting Started",
-              link: `/${LANG_PREFIX}` + "/getting-started",
+              link: "/getting-started",
             },
-            { text: "Architecture", link: `/${LANG_PREFIX}` + "/architecture" },
-            { text: "Cluster", link: `/${LANG_PREFIX}` + "/cluster" },
-            { text: "Definition", link: `/${LANG_PREFIX}` + "/definition" },
+            { text: "Architecture", link: "/architecture" },
+            { text: "Cluster", link: "/cluster" },
+            { text: "Definition", link: "/definition" },
           ],
         },
       ],
     },
-    "/role-and-permissions/": {
-      base: "/role-and-permissions",
+    "/en/role-and-permissions/": {
+      base: `/${LANG_PREFIX}/role-and-permissions`,
       items: [
         {
           text: "Role and Permissions",
           items: [
-            { text: "Permission Inherited", link: `/${LANG_PREFIX}` + "/" },
+            { text: "Permission Inherited", link: "/" },
             {
               text: "Role and Permissions",
-              base: "/role-and-permissions/role",
+              base: `/${LANG_PREFIX}/role-and-permissions/role`,
               collapsed: true,
-              link: `/${LANG_PREFIX}` + "/",
+              link: "/",
               items: [
                 {
                   text: "Admin (Opstella)",
-                  link: `/${LANG_PREFIX}` + "/admin-company",
+                  link: "/admin-company",
                 },
                 {
                   text: "Admin",
-                  link: `/${LANG_PREFIX}` + "/admin",
+                  link: "/admin",
                 },
                 {
                   text: "Full Control",
-                  link: `/${LANG_PREFIX}` + "/full-control",
+                  link: "/full-control",
                 },
                 {
                   text: "Production",
-                  link: `/${LANG_PREFIX}` + "/production",
+                  link: "/production",
                 },
                 {
                   text: "Non Production",
-                  link: `/${LANG_PREFIX}` + "/non-production",
+                  link: "/non-production",
                 },
                 {
                   text: "CI/CD Dev",
-                  link: `/${LANG_PREFIX}` + "/cicd-dev",
+                  link: "/cicd-dev",
                 },
                 {
                   text: "CI/CD Dev Infra",
-                  link: `/${LANG_PREFIX}` + "/cicd-dev-infra",
+                  link: "/cicd-dev-infra",
                 },
               ],
             },
             {
               text: "Role Recommendations",
-              link: `/${LANG_PREFIX}` + "/role-commendations",
+              link: "/role-commendations",
             },
-            { text: "Create User", link: `/${LANG_PREFIX}` + "/create-user" },
+            { text: "Create User", link: "/create-user" },
           ],
         },
       ],
     },
-    "/deploy-application": {
-      base: "/deploy-application",
+    "/en/deploy-application": {
+      base: `/${LANG_PREFIX}/deploy-application`,
       items: [
         {
           text: "Deploy Application",
           items: [
             {
               text: "Prepare on Opstella",
-              link: `/${LANG_PREFIX}` + "/deploy-on-opstella",
+              link: "/deploy-on-opstella",
             },
             {
               text: "Deploy on Gitlab",
-              link: `/${LANG_PREFIX}` + "/",
+              link: "/",
               collapsed: true,
-              base: "/deploy-application/deploy-on-gitlab",
+              base: `/${LANG_PREFIX}/deploy-application/deploy-on-gitlab`,
               items: [
                 {
                   text: "Clone from opstella",
-                  link: `/${LANG_PREFIX}` + "/clone",
+                  link: "/clone",
                 },
                 {
                   text: "Push code to Opstella",
-                  link: `/${LANG_PREFIX}` + "/push-code",
+                  link: "/push-code",
                 },
                 {
                   text: "Pipeline Workflow",
-                  link: `/${LANG_PREFIX}` + "/workflow",
+                  link: "/workflow",
                 },
               ],
             },
             {
               text: "Using CI",
-              link: `/${LANG_PREFIX}` + "/using-ci",
+              link: "/using-ci",
             },
             {
               text: "Check Code Quality",
-              link: `/${LANG_PREFIX}` + "/check-code-quality",
+              link: "/check-code-quality",
             },
             {
               text: "Manage Registry",
-              link: `/${LANG_PREFIX}` + "/manage-registry",
+              link: "/manage-registry",
             },
             {
               text: "Using CD",
-              link: `/${LANG_PREFIX}` + "/using-cd",
+              link: "/using-cd",
             },
           ],
         },
       ],
     },
-    "/usecase": {
-      base: "/usecase",
+    "/en/usecase": {
+      base: `/${LANG_PREFIX}/usecase`,
       items: [
         {
           text: "Usecase",
           items: [
             {
               text: "ArgoCD UI",
-              link: `/${LANG_PREFIX}` + "/argocd-ui",
+              link: "/argocd-ui",
             },
             {
               text: "Check Application Status",
-              link: `/${LANG_PREFIX}` + "/check-application-status",
+              link: "/check-application-status",
             },
             {
               text: "Clone Application",
-              link: `/${LANG_PREFIX}` + "/clone-application",
+              link: "/clone-application",
             },
             {
               text: "Template",
-              link: `/${LANG_PREFIX}` + "/",
-              base: "/usecase/template",
+              link: "/",
+              base: `/${LANG_PREFIX}/usecase/template`,
               collapsed: true,
               items: [
                 {
                   text: "Create Template (Global)",
-                  link: `/${LANG_PREFIX}` + "/create-global-template",
+                  link: "/create-global-template",
                 },
                 {
                   text: "Create Template (Platform)",
-                  link: `/${LANG_PREFIX}` + "/create-platform-template",
+                  link: "/create-platform-template",
                 },
               ],
             },
             {
               text: "Manage Pipeline",
-              link: `/${LANG_PREFIX}` + "/manage-pipeline",
+              link: "/manage-pipeline",
             },
             {
               text: "Update Application",
-              link: `/${LANG_PREFIX}` + "/update-application",
+              link: "/update-application",
             },
             {
               text: "Using OneChart",
-              link: `/${LANG_PREFIX}` + "/using-onechart",
+              link: "/using-onechart",
             },
             {
               text: "Monitor Application",
-              link: `/${LANG_PREFIX}` + "/",
-              base: "/usecase/monitor-application",
+              link: "/",
+              base: `/${LANG_PREFIX}/usecase/monitor-application`,
               collapsed: true,
               items: [
                 {
                   text: "Log",
-                  link: `/${LANG_PREFIX}` + "/log",
+                  link: "/log",
                 },
                 {
                   text: "Metrics",
-                  link: `/${LANG_PREFIX}` + "/metrics",
+                  link: "/metrics",
                 },
                 {
                   text: "Tracing",
-                  link: `/${LANG_PREFIX}` + "/tracing",
+                  link: "/tracing",
                 },
               ],
             },
             {
               text: "Opensearch Index",
-              link: `/${LANG_PREFIX}` + "/opensearch-index",
+              link: "/opensearch-index",
             },
             {
               text: "Using Open telemetry",
-              link: `/${LANG_PREFIX}` + "/using-open-telemetry",
+              link: "/using-open-telemetry",
             },
             {
               text: "Config Application",
-              link: `/${LANG_PREFIX}` + "/config-application",
+              link: "/config-application",
             },
           ],
         },
       ],
     },
-    "/troubleshoot": {
-      base: "/troubleshoot",
+    "/en/troubleshoot": {
+      base: `/${LANG_PREFIX}/troubleshoot`,
       items: [
         {
           text: "Troubleshoot",
           items: [
             {
               text: "Check Application Job",
-              link: `/${LANG_PREFIX}` + "/check-application-job",
+              link: "/check-application-job",
             },
             {
               text: "Opstella Status",
-              link: `/${LANG_PREFIX}` + "/opstella-status",
+              link: "/opstella-status",
             },
             {
               text: "Pipeline",
-              link: `/${LANG_PREFIX}` + "/",
-              base: "/troubleshoot/pipeline",
+              link: "/",
+              base: `/${LANG_PREFIX}/troubleshoot/pipeline`,
               collapsed: true,
               items: [
                 {
                   text: "Build Issue",
-                  link: `/${LANG_PREFIX}` + "/build-issue",
+                  link: "/build-issue",
                 },
                 {
                   text: "Pull Image Proxy",
-                  link: `/${LANG_PREFIX}` + "/pull-image-proxy",
+                  link: "/pull-image-proxy",
                 },
                 {
                   text: "Case Mount Secret",
-                  link: `/${LANG_PREFIX}` + "/case-mount-secret",
+                  link: "/case-mount-secret",
                 },
                 {
                   text: "Library Deprecated",
-                  link: `/${LANG_PREFIX}` + "/library-deprecated",
+                  link: "/library-deprecated",
                 },
                 {
                   text: "Network Lost",
-                  link: `/${LANG_PREFIX}` + "/network-lost",
+                  link: "/network-lost",
                 },
                 {
                   text: "Sonar Scan Issue",
-                  link: `/${LANG_PREFIX}` + "/sonar-scan-issue",
+                  link: "/sonar-scan-issue",
                 },
               ],
             },
             {
               text: "Pod issue",
-              link: `/${LANG_PREFIX}` + "/pod-issue",
+              link: "/pod-issue",
             },
             {
               text: "Sync",
-              link: `/${LANG_PREFIX}` + "/",
-              base: "/troubleshoot/sync",
+              link: "/",
+              base: `/${LANG_PREFIX}/troubleshoot/sync`,
               collapsed: true,
               items: [
                 {
                   text: "Sync Platform",
-                  link: `/${LANG_PREFIX}` + "/sync-platform",
+                  link: "/sync-platform",
                 },
                 {
                   text: "Sync Service",
-                  link: `/${LANG_PREFIX}` + "/sync-service",
+                  link: "/sync-service",
                 },
                 {
                   text: "Sync Component",
-                  link: `/${LANG_PREFIX}` + "/sync-component",
+                  link: "/sync-component",
                 },
                 {
                   text: "Sync User",
-                  link: `/${LANG_PREFIX}` + "/sync-User",
+                  link: "/sync-User",
                 },
               ],
             },
             {
               text: "Application Case",
-              link: `/${LANG_PREFIX}` + "/",
-              base: "/troubleshoot/application-case",
+              link: "/",
+              base: `/${LANG_PREFIX}/troubleshoot/application-case`,
               collapsed: true,
               items: [
                 {
                   text: "Application Ingress Incorrect",
-                  link: `/${LANG_PREFIX}` + "/application-ingress-incorrect",
+                  link: "/application-ingress-incorrect",
                 },
                 {
                   text: "Application Port Incorrect",
-                  link: `/${LANG_PREFIX}` + "/application-port-incorrect",
+                  link: "/application-port-incorrect",
                 },
               ],
             },
