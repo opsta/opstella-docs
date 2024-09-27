@@ -4,7 +4,6 @@ import { defineConfig, type DefaultTheme } from "vitepress"
 export const th = defineConfig({
   lang: "en-US",
   description: "A Opstella docs",
-
   themeConfig: {
     nav: nav(),
 

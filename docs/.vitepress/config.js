@@ -7,6 +7,9 @@ export default defineConfig({
   title: "Opstella Docs",
   description: "A Opstella docs",
   // base: "/opstella-docs/",
+  rewrites: {
+    "th/:rest*": ":rest*",
+  },
   ignoreDeadLinks: true,
   head: [["link", { rel: "icon", href: "/images/favicon.svg" }]],
   locales: {
@@ -14,6 +17,7 @@ export default defineConfig({
     en: {
       label: "English",
       ...en,
+      link: "/en/",
     },
   },
   // themeConfig: {
