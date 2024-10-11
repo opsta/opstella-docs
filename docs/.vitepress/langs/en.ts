@@ -1,4 +1,3 @@
-import { createRequire } from "module"
 import { defineConfig, type DefaultTheme } from "vitepress"
 
 const LANG_PREFIX = "en"
@@ -276,6 +275,10 @@ function sidebar(): DefaultTheme.Sidebar {
               base: `/${LANG_PREFIX}/troubleshoot/pipeline`,
               collapsed: true,
               items: [
+                {
+                  text: "Pipeline structure",
+                  link: "/pipeline-structure",
+                },
                 {
                   text: "Build Issue",
                   link: "/build-issue",

@@ -1,4 +1,3 @@
-import { createRequire } from "module"
 import { defineConfig, type DefaultTheme } from "vitepress"
 
 export const th = defineConfig({
@@ -273,6 +272,10 @@ function sidebar(): DefaultTheme.Sidebar {
               base: "/troubleshoot/pipeline",
               collapsed: true,
               items: [
+                {
+                  text: "Pipeline structure",
+                  link: "/pipeline-structure",
+                },
                 {
                   text: "Build Issue",
                   link: "/build-issue",
