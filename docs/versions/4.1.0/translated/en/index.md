@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "Opstella"
+  name: "Opstella v4.1.0 ENG"
   text: "Platform Engineer as a Service"
   tagline: Opstella is a platform engineering product that helps software development in organizations more efficiently with the concept of DevSecOps so that your company has the advantage of automation deployment to production to the market quickly and securely.
   actions:

@@ -27,3 +27,15 @@ docker build -t component .
 **กรณีที่ไม่สามารถ build ได้** แสดงว่าต้องทำการ debug ภายใน source code
 
 **กรณีที่สามารถ build ได้** หากสามารถทำการ build docker ขึ้นมาได้ แต่ไม่สามารถ build บน pipeline ได้อาจเกิดจากปัญหาที่ kankiko ไม่เจอไฟล์ ให้ลองเพิ่มไฟล์เข้ามาใน repository
+
+
+
+### เมื่อพบปัญหาที่การ Debug และพบเจอปัญหา ที่คำสั่งบางคำสั่ง 
+
+โหมด Debug พบปัญหาบางคำสั่งดังรูปตัวอย่าง
+![Debug Pipeline](/images/troubleshoot/build-issue/5.png)
+
+เมืออ่านดูแล้วพบปัญหา ให้ทดลองแก้ไขปัญหาตามที่ error เกิดก่อน ใน error ข้างต้นให้ทำการเพิ่มโฟลเดอร์ media
+![Debug Pipeline Folder](/images/troubleshoot/build-issue/6.png)
+
+และทำการ Run Pipeline ใหม่อีกครั้ง
