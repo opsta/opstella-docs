@@ -1,0 +1,21 @@
+{
+  "/intro/": [
+    {
+      "text": "Introduction",
+      "items": [
+        {
+          "text": "What is Opstella?",
+          "link": "/intro/what-is-opstella"
+        },
+        {
+          "text": "Opstella Architecture",
+          "link": "/intro/opstella-architecture"
+        },
+        {
+          "text": "Reference Architecture",
+          "link": "/intro/reference-architecture"
+        }
+      ]
+    }
+  ]
+}
