@@ -65,3 +65,13 @@ td {
 .total-row {
   font-weight: bold;
 }
+/* Disable zoom for icons in features section */
+.VPFeatures img,
+.VPFeature img {
+  cursor: default !important;
+}
+
+.VPFeatures img.medium-zoom-image,
+.VPFeature img.medium-zoom-image {
+  pointer-events: none !important;
+}
