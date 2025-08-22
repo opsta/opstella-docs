@@ -11,8 +11,8 @@ export default {
   setup() {
     const route = useRoute();
     const initZoom = () => {
-      new mediumZoom("#app img", { background: "var(--vp-c-bg)" });
-      new mediumZoom("[data-zoomable]", { background: "var(--vp-c-bg)" }); // Should there be a new?
+      new mediumZoom("#app img:not(.logo)", { background: "var(--vp-c-bg)" });
+      new mediumZoom("[data-zoomable]:not(.logo)", { background: "var(--vp-c-bg)" });
     };
     onMounted(() => {
       initZoom();
