@@ -75,3 +75,7 @@ td {
 .VPFeature img.medium-zoom-image {
   pointer-events: none !important;
 }
+.VPHomeHero .tagline {
+  text-align: justify;
+  font-size: 22px;
+}
