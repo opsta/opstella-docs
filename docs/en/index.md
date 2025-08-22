@@ -54,6 +54,13 @@ features:
       height: 32
     details: Opstella troubleshoot-job showcases steps to identify and fix system issues efficiently.
     link: /troubleshoot/check-application-job
+  - title: onechart
+    icon:
+      src: /images/heroes/kubernetes.svg
+      width: 32
+      height: 32
+    details: Onechart Reference
+    link: /onechart/onechart
   # - title: Cluster
   #   icon:
   #     src: /images/heroes/kubernetes.svg

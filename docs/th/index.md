@@ -47,4 +47,11 @@ features:
       height: 32
     details: Case การใช้งานแบบต่างๆ ที่สำคัญๆ
     link: /usecase/argocd-ui
+  - title: onechart
+    icon:
+      src: /images/heroes/kubernetes.svg
+      width: 32
+      height: 32
+    details: Onechart Reference
+    link: /onechart/onechart
 ---
