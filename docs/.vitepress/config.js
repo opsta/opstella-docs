@@ -5,6 +5,10 @@ import { th } from "./langs/th";
 // https://vitepress.dev/re ference/site-config
 export default defineConfig({
   title: "Opstella Docs",
+   appearance: {
+    theme: 'light', 
+    toggle: true  
+  },
   description: "A Opstella docs",
   // base: "/opstella-docs/",
   rewrites: {
