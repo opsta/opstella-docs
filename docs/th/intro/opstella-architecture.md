@@ -15,9 +15,8 @@ outline: deep
 5. **PostgreSQL for Opstella:** ระบบฐานข้อมูลเชิงสัมพันธ์ (RDBMS) สำหรับ Opstella Core
 6. **Redis:** ที่จัดเก็บข้อมูลแบบ in-memory ใช้เป็นแคชสำหรับองค์ประกอบ Opstella Core
 7. **Dapr:** distributed application runtime ที่ประสานการทำงานระหว่างองค์ประกอบต่าง ๆ ของ Opstella
-8. **RabbitMQ:** ระบบ message broker ที่รองรับการสื่อสารแบบ asynchronous ระหว่างองค์ประกอบของ Opstella
-9. **Keycloak:** ระบบบริหารจัดการตัวตนและการเข้าถึง (IAM) ที่ให้บริการยืนยันตัวตน กำหนดสิทธิ์ และจัดการผู้ใช้สำหรับ Opstella
-10. **PostgreSQL for Keycloak:** ระบบฐานข้อมูลเชิงสัมพันธ์ (RDBMS) สำหรับ Keycloak
+8. **Keycloak:** ระบบบริหารจัดการตัวตนและการเข้าถึง (IAM) ที่ให้บริการยืนยันตัวตน กำหนดสิทธิ์ และจัดการผู้ใช้สำหรับ Opstella
+9. **PostgreSQL for Keycloak:** ระบบฐานข้อมูลเชิงสัมพันธ์ (RDBMS) สำหรับ Keycloak
 
 ### <ins>**Supported Integration Components**</ins>
 
