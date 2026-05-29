@@ -64,6 +64,7 @@ function sidebar(): DefaultTheme.Sidebar {
             },
             { text: "Opstella Architecture", link: "/opstella-architecture" },
             { text: "Reference Architecture", link: "/reference-architecture" },
+            { text: "API Gateway", link: "/api-gateway" },
             // { text: "Getting Started", link: "/getting-started" },
             // { text: "Architecture", link: "/architecture" },
             // { text: "Cluster", link: "/cluster" },
