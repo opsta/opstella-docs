@@ -24,7 +24,6 @@ outline: deep
         <ul style="list-style-type: circle;">
             <li><strong>Minio</strong> = ทำหน้าที่จัดเก็บข้อมูลประเภทไฟล์ เช่น รูปภาพ วิดีโอ เอกสาร และข้อมูลสำรอง</li>
             <li><strong>Postgresql</strong> = เป็นระบบจัดการฐานข้อมูล</li>
-            <li><strong>Rabbitmq</strong> = เครื่องมือทำงานตัวกลางรับส่งข้อความ เพื่อทำการสื่อสารกันในระบบ opstella</li>
             <li><strong>Redis</strong> = เครื่องมือฐานข้อมูลแบบ NoSQL</li>
         </ul>
     </li>

@@ -15,9 +15,8 @@ outline: deep
 5. **PostgreSQL for Opstella:** A relational database management system (RDBMS) for Opstella Core.
 6. **Redis:** An in-memory data store utilized as a cache for the Opstella Core component.
 7. **Dapr:** A distributed application runtime that orchestrates between each Opstella component.
-8. **RabbitMQ:** A message broker system that enables asynchronous communication to each Opstella component.
-9. **Keycloak:** An identity and access management that provides authentication, authorization, and user management for Opstella.
-10. **PostgreSQL for Keycloak:** A relational database management system (RDBMS) for Keycloak.
+8. **Keycloak:** An identity and access management that provides authentication, authorization, and user management for Opstella.
+9. **PostgreSQL for Keycloak:** A relational database management system (RDBMS) for Keycloak.
 
 ### <ins>**Supported Integration Components**</ins>
 
