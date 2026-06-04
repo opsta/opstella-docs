@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 430" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" role="img" aria-label="Opstella Object Storage architecture: observability archives, managed file transfer, backups and applications connect through the standard S3 API to a replicated SeaweedFS cluster, or to customer-provided S3-compatible storage">
+  <style>
+    :root{
+      --card-fill:#f3f5fa; --card-stroke:#dfe3ec; --label:#33384a; --grouplabel:#8a93a3;
+      --panel-fill:#f9faff; --panel-stroke:#cdd6f4;
+      --chip-fill:#eef1fd; --chip-stroke:#cfd8f6; --chip-text:#2f3e8c;
+      --muted:#8a93a3; --arrow:#aab2c2; --arrow-bold:#3a5ccc;
+      --band-fill:#f4f6fd; --band-stroke:#d6ddf5; --band-title:#6b7280;
+      --hdr1:#3a5ccc; --hdr2:#2f49a6; --hdr-text:#ffffff; --dot:#5672cd;
+    }
+    .lbl{fill:var(--label);font-size:13.5px;font-weight:600}
+    .grp{fill:var(--grouplabel);font-size:11.5px;font-weight:700;letter-spacing:1.5px}
+    .chip{fill:var(--chip-text);font-size:12.5px;font-weight:600}
+    .mut{fill:var(--muted);font-size:11px}
+    .hdr{fill:var(--hdr-text);font-weight:700;font-size:15px}
+    .bt{fill:var(--band-title);font-size:11px;font-weight:700;letter-spacing:1px}
+  </style>
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hdr1)"/><stop offset="1" stop-color="var(--hdr2)"/>
+    </linearGradient>
+    <marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="var(--arrow)"/></marker>
+    <marker id="ahb" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="var(--arrow-bold)"/></marker>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#1a2b6b" flood-opacity="0.12"/></filter>
+  </defs>
+
+  <text class="grp" x="125" y="52" text-anchor="middle">PRODUCERS</text>
+  <text class="grp" x="355" y="52" text-anchor="middle">ONE STANDARD API</text>
+  <text class="grp" x="690" y="52" text-anchor="middle">STORAGE CLUSTER</text>
+
+  <g>
+    <rect x="40" y="78" width="170" height="46" rx="11" fill="var(--card-fill)" stroke="var(--card-stroke)"/>
+    <circle cx="60" cy="101" r="5" fill="var(--dot)"/><text class="lbl" x="76" y="99">Observability</text>
+    <text class="mut" x="76" y="113">Loki · Mimir · Tempo</text>
+    <rect x="40" y="136" width="170" height="46" rx="11" fill="var(--card-fill)" stroke="var(--card-stroke)"/>
+    <circle cx="60" cy="159" r="5" fill="var(--dot)"/><text class="lbl" x="76" y="164">File Transfer</text>
+    <rect x="40" y="194" width="170" height="46" rx="11" fill="var(--card-fill)" stroke="var(--card-stroke)"/>
+    <circle cx="60" cy="217" r="5" fill="var(--dot)"/><text class="lbl" x="76" y="222">Backups</text>
+    <rect x="40" y="252" width="170" height="46" rx="11" fill="var(--card-fill)" stroke="var(--card-stroke)"/>
+    <circle cx="60" cy="275" r="5" fill="var(--dot)"/><text class="lbl" x="76" y="280">Applications</text>
+  </g>
+
+  <path d="M210,101 L282,160" fill="none" stroke="var(--arrow)" stroke-width="1.6"/>
+  <path d="M210,159 L282,185" fill="none" stroke="var(--arrow)" stroke-width="1.6"/>
+  <path d="M210,217 L282,205" fill="none" stroke="var(--arrow)" stroke-width="1.6" marker-end="url(#ah)"/>
+  <path d="M210,275 L282,230" fill="none" stroke="var(--arrow)" stroke-width="1.6"/>
+
+  <g filter="url(#sh)">
+    <rect x="285" y="120" width="140" height="172" rx="14" fill="var(--panel-fill)" stroke="var(--panel-stroke)"/>
+    <path d="M285,134 a14,14 0 0 1 14,-14 h112 a14,14 0 0 1 14,14 v30 h-140 z" fill="url(#hdr)"/>
+    <text class="hdr" x="355" y="149" text-anchor="middle">S3 API</text>
+    <rect x="303" y="178" width="104" height="26" rx="13" fill="var(--chip-fill)" stroke="var(--chip-stroke)"/>
+    <text class="chip" x="355" y="195" text-anchor="middle">Buckets</text>
+    <rect x="303" y="212" width="104" height="26" rx="13" fill="var(--chip-fill)" stroke="var(--chip-stroke)"/>
+    <text class="chip" x="355" y="229" text-anchor="middle">Access keys</text>
+    <rect x="303" y="246" width="104" height="26" rx="13" fill="var(--chip-fill)" stroke="var(--chip-stroke)"/>
+    <text class="chip" x="355" y="263" text-anchor="middle">TLS</text>
+  </g>
+
+  <path d="M425,206 L496,206" fill="none" stroke="var(--arrow-bold)" stroke-width="1.8" marker-end="url(#ahb)"/>
+
+  <g filter="url(#sh)">
+    <rect x="500" y="78" width="380" height="216" rx="14" fill="var(--panel-fill)" stroke="var(--panel-stroke)"/>
+    <path d="M500,92 a14,14 0 0 1 14,-14 h352 a14,14 0 0 1 14,14 v30 h-380 z" fill="url(#hdr)"/>
+    <text class="hdr" x="690" y="107" text-anchor="middle">SeaweedFS</text>
+    <rect x="524" y="158" width="130" height="46" rx="11" fill="var(--card-fill)" stroke="var(--card-stroke)"/>
+    <circle cx="544" cy="181" r="5" fill="var(--dot)"/><text class="lbl" x="560" y="186">Filer</text>
+    <path d="M654,181 L700,150" fill="none" stroke="var(--arrow)" stroke-width="1.6" marker-end="url(#ah)"/>
+    <path d="M654,181 L700,196" fill="none" stroke="var(--arrow)" stroke-width="1.6" marker-end="url(#ah)"/>
+    <path d="M654,181 L700,242" fill="none" stroke="var(--arrow)" stroke-width="1.6" marker-end="url(#ah)"/>
+    <rect x="704" y="128" width="152" height="38" rx="10" fill="var(--card-fill)" stroke="var(--card-stroke)"/>
+    <text class="lbl" x="780" y="152" text-anchor="middle">Volume server 1</text>
+    <rect x="704" y="174" width="152" height="38" rx="10" fill="var(--card-fill)" stroke="var(--card-stroke)"/>
+    <text class="lbl" x="780" y="198" text-anchor="middle">Volume server 2</text>
+    <rect x="704" y="220" width="152" height="38" rx="10" fill="var(--card-fill)" stroke="var(--card-stroke)"/>
+    <text class="lbl" x="780" y="244" text-anchor="middle">Volume server 3</text>
+    <text class="mut" x="589" y="226" text-anchor="middle">replication across</text>
+    <text class="mut" x="589" y="240" text-anchor="middle">nodes and disks</text>
+    <text class="mut" x="690" y="278" text-anchor="middle">scales horizontally — add volume servers to grow</text>
+  </g>
+
+  <g>
+    <rect x="500" y="312" width="380" height="50" rx="12" fill="var(--band-fill)" stroke="var(--band-stroke)" stroke-dasharray="6 4"/>
+    <text class="bt" x="690" y="332" text-anchor="middle">ALTERNATIVE</text>
+    <text class="mut" x="690" y="349" text-anchor="middle">or connect customer-provided S3-compatible storage</text>
+  </g>
+
+  <rect x="40" y="322" width="200" height="28" rx="14" fill="var(--chip-fill)" stroke="var(--chip-stroke)"/>
+  <text class="chip" x="140" y="340" text-anchor="middle">Lifecycle: archive &gt; 365 d</text>
+  <rect x="252" y="322" width="120" height="28" rx="14" fill="var(--chip-fill)" stroke="var(--chip-stroke)"/>
+  <text class="chip" x="312" y="340" text-anchor="middle">Versioning</text>
+  <text class="mut" x="206" y="384" text-anchor="middle">Apache-2.0 — no per-object or per-request license limits</text>
+</svg>

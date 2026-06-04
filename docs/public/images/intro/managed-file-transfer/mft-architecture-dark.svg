@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 440" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" role="img" aria-label="Opstella Managed File Transfer architecture: partners connect over SFTP through a TCP load balancer to stateless SFTPGo replicas with per-path permissions, storing files in S3 object storage, triggering processing services by webhook, managed through a REST API and backed by PostgreSQL">
+  <style>
+    :root{
+      --card-fill:#0d1430; --card-stroke:#283254; --label:rgba(255,255,245,.88); --grouplabel:#7a85a0;
+      --panel-fill:#0a1130; --panel-stroke:#2c3768;
+      --chip-fill:rgba(100,108,255,.16); --chip-stroke:#3a4796; --chip-text:#b9c0ff;
+      --muted:#7a85a0; --arrow:#4a5478; --arrow-bold:#8b97ff;
+      --band-fill:#0a1030; --band-stroke:#2a3566; --band-title:#9aa3c0;
+      --hdr1:#5c73e7; --hdr2:#4150c4; --hdr-text:#ffffff; --dot:#8b97ff;
+    }
+    .lbl{fill:var(--label);font-size:13px;font-weight:600}
+    .grp{fill:var(--grouplabel);font-size:11.5px;font-weight:700;letter-spacing:1.5px}
+    .chip{fill:var(--chip-text);font-size:12px;font-weight:600}
+    .mut{fill:var(--muted);font-size:11px}
+    .hdr{fill:var(--hdr-text);font-weight:700;font-size:14px}
+    .bt{fill:var(--band-title);font-size:11px;font-weight:700;letter-spacing:1px}
+  </style>
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hdr1)"/><stop offset="1" stop-color="var(--hdr2)"/>
+    </linearGradient>
+    <marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="var(--arrow)"/></marker>
+    <marker id="ahb" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="var(--arrow-bold)"/></marker>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.12"/></filter>
+  </defs>
+
+  <text class="grp" x="110" y="52" text-anchor="middle">PARTNERS</text>
+  <text class="grp" x="520" y="52" text-anchor="middle">MANAGED FILE TRANSFER</text>
+  <text class="grp" x="800" y="52" text-anchor="middle">STORAGE &amp; PROCESSING</text>
+
+  <g>
+    <rect x="40" y="86" width="140" height="46" rx="11" fill="var(--card-fill)" stroke="var(--card-stroke)"/>
+    <circle cx="58" cy="109" r="5" fill="var(--dot)"/><text class="lbl" x="72" y="114">Bank / Agent A</text>
+    <rect x="40" y="144" width="140" height="46" rx="11" fill="var(--card-fill)" stroke="var(--card-stroke)"/>
+    <circle cx="58" cy="167" r="5" fill="var(--dot)"/><text class="lbl" x="72" y="172">Payment Agent B</text>
+    <rect x="40" y="202" width="140" height="46" rx="11" fill="var(--card-fill)" stroke="var(--card-stroke)"/>
+    <circle cx="58" cy="225" r="5" fill="var(--dot)"/><text class="lbl" x="72" y="230">External system</text>
+  </g>
+
+  <path d="M180,109 L246,156" fill="none" stroke="var(--arrow)" stroke-width="1.6"/>
+  <path d="M180,167 L246,170" fill="none" stroke="var(--arrow)" stroke-width="1.6" marker-end="url(#ah)"/>
+  <path d="M180,225 L246,184" fill="none" stroke="var(--arrow)" stroke-width="1.6"/>
+  <text class="mut" x="213" y="146" text-anchor="middle">SFTP :22</text>
+
+  <g>
+    <rect x="250" y="142" width="130" height="56" rx="11" fill="var(--card-fill)" stroke="var(--card-stroke)"/>
+    <circle cx="268" cy="163" r="5" fill="var(--dot)"/><text class="lbl" x="282" y="167">TCP LB</text>
+    <text class="mut" x="282" y="184">PROXY protocol</text>
+  </g>
+  <path d="M380,170 L416,170" fill="none" stroke="var(--arrow-bold)" stroke-width="1.8" marker-end="url(#ahb)"/>
+
+  <g filter="url(#sh)">
+    <rect x="420" y="80" width="220" height="246" rx="14" fill="var(--panel-fill)" stroke="var(--panel-stroke)"/>
+    <path d="M420,94 a14,14 0 0 1 14,-14 h192 a14,14 0 0 1 14,14 v30 h-220 z" fill="url(#hdr)"/>
+    <text class="hdr" x="530" y="100" text-anchor="middle">SFTPGo replicas</text>
+    <rect x="440" y="128" width="180" height="26" rx="13" fill="var(--chip-fill)" stroke="var(--chip-stroke)"/>
+    <text class="chip" x="530" y="145" text-anchor="middle">Virtual folders</text>
+    <rect x="440" y="162" width="180" height="26" rx="13" fill="var(--chip-fill)" stroke="var(--chip-stroke)"/>
+    <text class="chip" x="530" y="179" text-anchor="middle">Per-path permissions</text>
+    <rect x="440" y="196" width="180" height="26" rx="13" fill="var(--chip-fill)" stroke="var(--chip-stroke)"/>
+    <text class="chip" x="530" y="213" text-anchor="middle">Per-user IP allow lists</text>
+    <rect x="440" y="230" width="180" height="26" rx="13" fill="var(--chip-fill)" stroke="var(--chip-stroke)"/>
+    <text class="chip" x="530" y="247" text-anchor="middle">Event Manager</text>
+    <text class="mut" x="530" y="278" text-anchor="middle">folders per data type:</text>
+    <text class="mut" x="530" y="293" text-anchor="middle" font-size="10.5">Transaction · Incomplete · Enrollment</text>
+    <text class="mut" x="530" y="308" text-anchor="middle">DDCC · Offline · Adjustment</text>
+  </g>
+
+  <path d="M640,140 L716,124" fill="none" stroke="var(--arrow-bold)" stroke-width="1.8" marker-end="url(#ahb)"/>
+  <path d="M640,243 L716,212" fill="none" stroke="var(--arrow-bold)" stroke-width="1.8" marker-end="url(#ahb)"/>
+  <text class="mut" x="672" y="232" text-anchor="middle">webhook</text>
+  <text class="mut" x="672" y="246" text-anchor="middle">on upload</text>
+  <path d="M716,290 L640,272" fill="none" stroke="var(--arrow)" stroke-width="1.6" marker-end="url(#ah)"/>
+
+  <g>
+    <rect x="720" y="100" width="160" height="46" rx="11" fill="var(--card-fill)" stroke="var(--card-stroke)"/>
+    <circle cx="738" cy="123" r="5" fill="var(--dot)"/><text class="lbl" x="752" y="121">Object Storage</text>
+    <text class="mut" x="752" y="136">S3 backend</text>
+    <rect x="720" y="178" width="160" height="46" rx="11" fill="var(--card-fill)" stroke="var(--card-stroke)"/>
+    <circle cx="738" cy="201" r="5" fill="var(--dot)"/><text class="lbl" x="752" y="199">Processing</text>
+    <text class="mut" x="752" y="214">validation · ingestion</text>
+    <rect x="720" y="268" width="160" height="46" rx="11" fill="var(--card-fill)" stroke="var(--card-stroke)"/>
+    <circle cx="738" cy="291" r="5" fill="var(--dot)"/><text class="lbl" x="752" y="289">Your admin UI</text>
+    <text class="mut" x="752" y="304">via REST API</text>
+  </g>
+
+  <path d="M470,326 L470,358" fill="none" stroke="var(--arrow)" stroke-width="1.6" marker-end="url(#ah)"/>
+  <rect x="400" y="362" width="140" height="40" rx="11" fill="var(--card-fill)" stroke="var(--card-stroke)"/>
+  <circle cx="418" cy="382" r="5" fill="var(--dot)"/><text class="lbl" x="432" y="387">PostgreSQL</text>
+
+  <path d="M590,326 L590,358" fill="none" stroke="var(--arrow)" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#ah)"/>
+  <g>
+    <rect x="556" y="362" width="240" height="40" rx="11" fill="var(--band-fill)" stroke="var(--band-stroke)"/>
+    <text class="mut" x="676" y="380" text-anchor="middle">transfer logs — user · IP · file · time</text>
+    <text class="mut" x="676" y="394" text-anchor="middle">shipped to centralized logging</text>
+  </g>
+
+  <text class="mut" x="110" y="290" text-anchor="middle">password / SSH key auth</text>
+  <text class="mut" x="110" y="305" text-anchor="middle">host keys never change</text>
+</svg>
