@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 330" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" role="img" aria-label="Opstella CI/CD pipeline: commit, build, unit tests with coverage gate, quality and security scan, integration and scenario tests, then GitOps deploy through DEV, SIT, UAT, PRE and PRD environments">
+  <style>
+    :root{
+      --card-fill:#0d1430; --card-stroke:#283254; --label:rgba(255,255,245,.88); --grouplabel:#7a85a0;
+      --panel-fill:#0a1130; --panel-stroke:#2c3768;
+      --chip-fill:rgba(100,108,255,.16); --chip-stroke:#3a4796; --chip-text:#b9c0ff;
+      --muted:#7a85a0; --arrow:#4a5478; --arrow-bold:#8b97ff;
+      --band-fill:#0a1030; --band-stroke:#2a3566; --band-title:#9aa3c0;
+      --hdr1:#5c73e7; --hdr2:#4150c4; --hdr-text:#ffffff; --dot:#8b97ff;
+    }
+    .lbl{fill:var(--label);font-size:13px;font-weight:600}
+    .grp{fill:var(--grouplabel);font-size:11.5px;font-weight:700;letter-spacing:1.5px}
+    .chip{fill:var(--chip-text);font-size:12px;font-weight:600}
+    .mut{fill:var(--muted);font-size:11px}
+    .hdr{fill:var(--hdr-text);font-weight:700;font-size:13.5px}
+    .bt{fill:var(--band-title);font-size:11px;font-weight:700;letter-spacing:1px}
+  </style>
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hdr1)"/><stop offset="1" stop-color="var(--hdr2)"/>
+    </linearGradient>
+    <marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="var(--arrow)"/></marker>
+    <marker id="ahb" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="var(--arrow-bold)"/></marker>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.12"/></filter>
+  </defs>
+
+  <text class="grp" x="460" y="40" text-anchor="middle">GITLAB CI PIPELINE — RUNS ON EVERY COMMIT</text>
+
+  <g>
+    <rect x="40" y="64" width="120" height="54" rx="11" fill="var(--card-fill)" stroke="var(--card-stroke)"/>
+    <circle cx="58" cy="84" r="5" fill="var(--dot)"/><text class="lbl" x="72" y="88">Commit</text>
+    <text class="mut" x="72" y="104">GitLab</text>
+    <rect x="190" y="64" width="120" height="54" rx="11" fill="var(--card-fill)" stroke="var(--card-stroke)"/>
+    <circle cx="208" cy="84" r="5" fill="var(--dot)"/><text class="lbl" x="222" y="88">Build</text>
+    <text class="mut" x="222" y="104">container image</text>
+    <rect x="340" y="64" width="120" height="54" rx="11" fill="var(--card-fill)" stroke="var(--card-stroke)"/>
+    <circle cx="358" cy="84" r="5" fill="var(--dot)"/><text class="lbl" x="372" y="88">Unit tests</text>
+    <text class="mut" x="372" y="104">automated</text>
+    <rect x="490" y="64" width="120" height="54" rx="11" fill="var(--card-fill)" stroke="var(--card-stroke)"/>
+    <circle cx="508" cy="84" r="5" fill="var(--dot)"/><text class="lbl" x="522" y="82">Quality &amp;</text>
+    <text class="lbl" x="522" y="97">security gate</text>
+    <rect x="640" y="64" width="120" height="54" rx="11" fill="var(--card-fill)" stroke="var(--card-stroke)"/>
+    <circle cx="658" cy="84" r="5" fill="var(--dot)"/><text class="lbl" x="672" y="82">Integration &amp;</text>
+    <text class="lbl" x="672" y="97">scenario tests</text>
+  </g>
+
+  <g filter="url(#sh)">
+    <rect x="790" y="58" width="100" height="66" rx="12" fill="var(--panel-fill)" stroke="var(--panel-stroke)"/>
+    <path d="M790,72 a14,14 0 0 1 14,-14 h72 a14,14 0 0 1 14,14 v22 h-100 z" fill="url(#hdr)"/>
+    <text class="hdr" x="840" y="78" text-anchor="middle">Deploy</text>
+    <text class="chip" x="840" y="108" text-anchor="middle">ArgoCD GitOps</text>
+  </g>
+
+  <path d="M160,91 L186,91" fill="none" stroke="var(--arrow-bold)" stroke-width="1.8" marker-end="url(#ahb)"/>
+  <path d="M310,91 L336,91" fill="none" stroke="var(--arrow-bold)" stroke-width="1.8" marker-end="url(#ahb)"/>
+  <path d="M460,91 L486,91" fill="none" stroke="var(--arrow-bold)" stroke-width="1.8" marker-end="url(#ahb)"/>
+  <path d="M610,91 L636,91" fill="none" stroke="var(--arrow-bold)" stroke-width="1.8" marker-end="url(#ahb)"/>
+  <path d="M760,91 L786,91" fill="none" stroke="var(--arrow-bold)" stroke-width="1.8" marker-end="url(#ahb)"/>
+
+  <rect x="328" y="140" width="144" height="28" rx="14" fill="var(--chip-fill)" stroke="var(--chip-stroke)"/>
+  <text class="chip" x="400" y="158" text-anchor="middle">coverage ≥ 80% gate</text>
+  <path d="M400,140 L400,122" fill="none" stroke="var(--arrow)" stroke-width="1.4" marker-end="url(#ah)"/>
+
+  <text class="mut" x="550" y="150" text-anchor="middle">SonarQube · Trivy · ZAP</text>
+  <text class="mut" x="550" y="164" text-anchor="middle">findings centralized in DefectDojo</text>
+
+  <text class="mut" x="175" y="156" text-anchor="middle">failing tests or unmet gates</text>
+  <text class="mut" x="175" y="170" text-anchor="middle">stop the pipeline here</text>
+
+  <path d="M840,124 L840,196" fill="none" stroke="var(--arrow-bold)" stroke-width="1.8" marker-end="url(#ahb)"/>
+
+  <g>
+    <rect x="40" y="200" width="850" height="80" rx="12" fill="var(--band-fill)" stroke="var(--band-stroke)"/>
+    <text class="bt" x="60" y="226">ENVIRONMENTS — PROMOTED BY GITOPS</text>
+    <rect x="70" y="238" width="120" height="28" rx="14" fill="var(--chip-fill)" stroke="var(--chip-stroke)"/>
+    <text class="chip" x="130" y="256" text-anchor="middle">DEV</text>
+    <rect x="230" y="238" width="120" height="28" rx="14" fill="var(--chip-fill)" stroke="var(--chip-stroke)"/>
+    <text class="chip" x="290" y="256" text-anchor="middle">SIT</text>
+    <rect x="390" y="238" width="120" height="28" rx="14" fill="var(--chip-fill)" stroke="var(--chip-stroke)"/>
+    <text class="chip" x="450" y="256" text-anchor="middle">UAT</text>
+    <rect x="550" y="238" width="120" height="28" rx="14" fill="var(--chip-fill)" stroke="var(--chip-stroke)"/>
+    <text class="chip" x="610" y="256" text-anchor="middle">PRE</text>
+    <rect x="710" y="238" width="120" height="28" rx="14" fill="var(--chip-fill)" stroke="var(--chip-stroke)"/>
+    <text class="chip" x="770" y="256" text-anchor="middle">PRD</text>
+    <path d="M190,252 L226,252" fill="none" stroke="var(--arrow)" stroke-width="1.6" marker-end="url(#ah)"/>
+    <path d="M350,252 L386,252" fill="none" stroke="var(--arrow)" stroke-width="1.6" marker-end="url(#ah)"/>
+    <path d="M510,252 L546,252" fill="none" stroke="var(--arrow)" stroke-width="1.6" marker-end="url(#ah)"/>
+    <path d="M670,252 L706,252" fill="none" stroke="var(--arrow)" stroke-width="1.6" marker-end="url(#ah)"/>
+  </g>
+
+  <text class="mut" x="460" y="306" text-anchor="middle">every deployment traceable to a commit, a pipeline run, and passing tests</text>
+</svg>

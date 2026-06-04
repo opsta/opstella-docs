@@ -66,7 +66,7 @@ Because the gateway is stateless and containerized, Opstella scales it horizonta
 
 ### Client, API, and User Management
 
-Opstella lets you add, update, and remove client applications and create an unlimited number of APIs, services, routes, and consumers — all from the web portal. Platform users are managed centrally through Opstella's single sign-on and role-based access control, with roles such as **Administrator** and **User**.
+Opstella lets you add, update, and remove client applications and create an unlimited number of APIs, services, routes, and consumers — all from the web portal. Each client application can be given a **validity period**: credentials such as API keys, tokens, and certificates carry configurable expiration dates, so partner access ends automatically on schedule instead of lingering after a contract lapses. Platform users are managed centrally through Opstella's single sign-on and role-based access control, with roles such as **Administrator** and **User**.
 
 ## <ins>**Standards & Compliance**</ins>
 
