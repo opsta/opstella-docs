@@ -44,9 +44,9 @@ Opstella protects upstream services by capping how often each client application
 
 Opstella keeps services stable when things go wrong. It can trip a circuit breaker when an upstream starts failing and automatically retry transient errors, shielding clients from intermittent issues and giving backends room to recover.
 
-### Response Caching
+### Response Caching and Invalidation
 
-Opstella can cache frequently requested responses at the gateway to reduce load on upstream services and improve latency. Caching is configurable per API and endpoint — including time-to-live (TTL), which request methods are cacheable (for example, `GET` only), and which response codes to cache. Conditional bypass rules ensure clients are not served stale data once the source changes.
+Opstella can cache frequently requested responses at the gateway to reduce load on upstream services and improve latency. Caching is configurable per API and endpoint — including time-to-live (TTL), which request methods are cacheable (for example, `GET` only), and which response codes to cache. Cached entries can be **invalidated by time and on other conditions — for example, when the upstream data is updated** — so clients are never served stale content after the source changes.
 
 ### Secure Communication and Certificate Management
 
